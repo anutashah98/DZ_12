@@ -16,12 +16,12 @@ public static class BlockChecker
     
     public static bool HasBlockInDirection(Vector3 position,Vector3 direction)
     {
-        
-        var forwardDownDirection = direction;
-        forwardDownDirection.y = -0.8f;
-        
-        var len = forwardDownDirection.magnitude;
-        return Physics.Raycast(position, forwardDownDirection, len);
+        //
+        // var forwardDownDirection = direction;
+        // forwardDownDirection.y = -0.8f;
+        //
+        // var len = forwardDownDirection.magnitude;
+        return Physics.Raycast(position + direction, Vector3.down, 1f);
     }
     
     public static void SnapPositionToInteger(Transform transform)
