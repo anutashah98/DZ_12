@@ -12,8 +12,6 @@ GameObject:
   - component: {fileID: 33453496739782670}
   - component: {fileID: 23598775629326906}
   - component: {fileID: 65301363151559652}
-  - component: {fileID: 1543280532}
-  - component: {fileID: 1543280533}
   m_Layer: 0
   m_Name: Button 01
   m_TagString: Untagged
@@ -99,47 +97,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.7151579, y: 0.03328338, z: 0.7151579}
   m_Center: {x: 0, y: 0.055119574, z: 0}
---- !u!114 &1543280532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1179303705199378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d756e71d578b48a29af8acf45efa9f2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isPressed: 0
---- !u!114 &1543280533
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1179303705199378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7393a8517ac6add41a499375a14b5c60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _playerTag: Player
-  OnPressed:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1543280532}
-        m_TargetAssemblyTypeName: DefaultNamespace.ChangePlateColor, Assembly-CSharp
-        m_MethodName: PressedPlate
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &1191148978561880
 GameObject:
   m_ObjectHideFlags: 0
